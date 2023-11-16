@@ -1,0 +1,175 @@
+:root{
+    font-family: 'Montserrat', sans-serif;
+    --orange: #ce8211;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav-landing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    color: #ccc;
+    padding: 1.5rem;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.inside-nav{
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+}
+.text-orange{
+    color: var(--orange);
+}
+.custom-btn{
+    border: solid 2px var(--orange);
+    padding: 0.5rem 1.5rem;
+    border-radius: 70px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+.custom-btn:hover{
+    background-color: var(--orange);
+    color: #000;
+}
+.landing-btn-parent{
+    width: max-content;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border: 5px solid var(--orange);
+    border-radius: 70px;
+    padding: .2rem;
+}
+
+.landing-btn{
+    padding: 1rem 3rem;
+    background-color: var(--orange);
+    border-radius: 70px;
+    color: #000;
+    font-weight: 800;
+}
+
+a{
+    text-decoration: none;
+}
+
+.inner-landing{
+    padding: 3rem;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.inner-landing h3{
+    font-size: 5rem;
+    max-width: 800px;
+}
+
+.menu-phone{
+    display: none;
+    color: var(--orange);
+    position: relative;
+    justify-self: end;
+}
+
+.menu-phone::after{
+    content: '';
+    border: solid 2px var(--orange);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 53px;
+}
+.arrow{
+    padding-top: .5rem;
+    width: 40px;
+    fill: #ccc;
+}
+
+
+
+@media screen and (max-width: 1920px){
+    
+}
+
+@media screen and (max-width: 1366px){
+    .inner-landing h3{
+        font-size: 3rem;
+    }
+    .landing-btn{
+        font-size: 1.5rem;
+        padding: .7rem 1.5rem;
+    }
+    .arrow{
+        width:30px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .inner-landing h3{
+        font-size: 3rem;
+    }
+    .landing-btn{
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    .arrow{
+        width:20px;
+    }
+    .show-img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .inner-landing h3{
+        font-size: 2rem;
+    }
+    .inner-landing .show-img{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-phone{
+        display: block;
+    }
+    .login-btn{
+        display: none;
+    }
+    .nav-landing{
+        justify-content: end;
+    }
+    .landing-btn{
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    .arrow{
+        width:20px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    
+}
+
+
+
+
+
+
+
+
+    
